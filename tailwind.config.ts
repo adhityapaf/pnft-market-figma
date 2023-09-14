@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#5429FF',
+        'background': '#CBCCE8',
+        'secondary': '#344054',
+        'accent1': '#D0D5DD',
+        'accent2': '#667085'
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +25,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 export default config
