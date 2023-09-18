@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="container px-6 md:px-10 md:flex md:flex-row md:justify-between">
-        <div>
-          <div className="flex flex-col md:flex-row pt-[88px] md:pt-10 items-center">
+    <main className="w-full flex justify-center items-center">
+      <div className="container px-6 lg:px-10 lg:flex lg:flex-row lg:justify-between">
+        <div className="lg:min-w-[320px]">
+          <div className="flex flex-col lg:flex-row pt-[88px] lg:pt-10 items-center">
             <Image
-              className="mx-auto md:mx-0"
+              className="mx-auto lg:mx-0"
               width={32}
               height={32}
               src="/logo.png"
               alt="logo"
             />
-            <p className="mt-3 md:mt-0 md:ms-3 text-black text-center md:text-left">
+            <p className="mt-3 lg:mt-0 lg:ms-3 text-black text-center lg:text-left">
               PNFT Market
             </p>
           </div>
@@ -109,8 +109,15 @@ export default function Home() {
           </div>
           <div className="mt-[63px]"></div>
         </div>
-        <div className="hidden md:flex bg-yellow-300  md:visible text-black">
-          Right Column
+        <div className="hidden lg:flex lg:min-w-[142px]"></div>
+        <div className="hidden lg:my-8 lg:mr-8 lg:flex bg-background object-contain text-black rounded-[40px] flex-shrink-0">
+          <Image
+            src={"/DRIP_20.png"}
+            className="m-4 h-auto object-contain"
+            alt="nft logo"
+            width={736}
+            height={865}
+          />
         </div>
       </div>
     </main>
